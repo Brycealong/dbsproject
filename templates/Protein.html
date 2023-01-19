@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+{% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protein Interactions Network Database | Proteins</title>
+    <link rel="stylesheet" href="../static/assets/css/second.css">
+    <link rel="stylesheet" href="../static/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/assets/css/style.css">
+
+</head>
+
+<body>
+    <div class="top">
+        <ul>
+            <div class="logo">
+                <li><img src="../static/assets/images/logo.png" alt="Logo"></li>
+            </div>
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a class="active" href="Protein.html"><b>Protein</b></a></li>
+            <li><a href="Organism.html"><b>Organism</b></a></li>
+            <li><a href="./index.html#About"><b>About</b></a></li> 
+            <li><a href="./index.html#Team"><b>Team</b></a></li> 
+        </ul>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-7">
+        <div class="header-hero-content">
+        <h2 class="hero-title"><b>{{name}}</b></h2><br>
+        <table>
+            <thead>
+                <tr>
+                    <br>
+                    <th>Interaction_ID, Organism_Name, Protein_Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in result %}
+                <tr>
+                    <td>{{item}}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+        </table>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+</body>
+</html>

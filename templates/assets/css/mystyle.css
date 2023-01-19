@@ -1,0 +1,35 @@
+.intro {
+    font-size: 25px;
+    color:rgb(255, 255, 255);
+    line-height: 1.5em;
+}
+.welcome {
+    font-size: 50px;
+    color:rgb(7, 7, 7);
+    text-align: center;
+    font-weight:700;
+}
+.next {
+    font-size: 25px;
+    color:rgb(67, 66, 66);
+    text-align: center;
+    font-weight:400;
+}
+.name {
+    font-size: 20px;
+    color:rgb(248, 75, 27);
+    text-align: left;
+    font-weight:600;
+}
+a:link {
+    color: rgb(248, 75, 27);
+}
+a:visited {
+    color:rgb(248, 75, 27);
+}
+a:hover {
+    color:rgb(183, 55, 0);
+}
+a:active {
+    color: blue;
+}

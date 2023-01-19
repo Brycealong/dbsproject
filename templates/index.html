@@ -1,0 +1,305 @@
+<!doctype html>
+<html class="no-js" lang="en">
+{% load static %}
+<head>
+<meta charset="utf-8">
+
+<title>Protein Interactions Network Database | Home</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="static/assets/images/favicon.png" type="image/png">
+
+<link rel="stylesheet" href="static/assets/css/animate.css">
+
+<link rel="stylesheet" href="static/assets/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="static/assets/css/default.css">
+
+<link rel="stylesheet" href="static/assets/css/style.css">
+
+<link rel="stylesheet" href="static/assets/css/mystyle.css">
+</head>
+<body>
+
+<div class="preloader">
+<div class="loader">
+<div class="ytp-spinner">
+<div class="ytp-spinner-container">
+<div class="ytp-spinner-rotator">
+<div class="ytp-spinner-left">
+<div class="ytp-spinner-circle"></div>
+</div>
+<div class="ytp-spinner-right">
+<div class="ytp-spinner-circle"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<header class="header-area">
+<div class="navbar-area headroom">
+<div class="container">
+<div class="row">
+<div class="col-lg-12">
+<nav class="navbar navbar-expand-lg">
+<a class="navbar-brand" href="index.html">
+<img src="static/assets/images/logo.png" alt="Logo">
+</a>
+<div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+<ul id="nav" class="navbar-nav m-auto">
+<li class="nav-item active">
+<a href="./index.html#Home">Home</a>
+</li>
+<li class="nav-item">
+<a href="./Protein.html">Protein </a>
+</li>
+<li class="nav-item">
+<a href="./Organism.html">Organism</a>
+</li>
+<li class="nav-item">
+    <a href="#About">About</a>
+    </li>
+<li class="nav-item">
+<a href="#Team">Team</a>
+</li>
+</ul>
+</div> 
+</nav> 
+</div>
+</div> 
+</div> 
+</div> 
+<div id="Home" class="header-hero bg_cover d-lg-flex align-items-center" style="background-image: url(static/assets/images/background.png)">
+<div class="container">
+<div class="row">
+<div class="col-lg-7">
+<div class="header-hero-content">
+<h1 class="hero-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"><b>Protein Protein</b> <span>Interactions</span> Networks <b>Database.</b></h1>
+<br>
+<p class="intro wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s"><b>This database includes protein interaction networks and protein functions of different species.</b></p>
+<div class="header-singup wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+<form method="get" action="/search/">
+    <input type="text" placeholder="Protein name/Organism name" name="nm">
+    <div class="intro wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+        <label><input type="radio" name="option" id="" checked style="width:20px; height:20px">&nbsp Protein &nbsp</label>
+        <label><input type="radio" name="option" id="" style="width:20px; height:20px">&nbsp Organism &nbsp</label>
+    </div>
+    <button type="submit" class="main-btn">Search</button>
+</form>   
+</div>
+</div> <br>
+
+</div>
+</div> 
+</div> 
+</div> 
+</header>
+
+
+<section id="About" class="about-area pt-115">
+<div class="container">
+<div class="row justify-content-center">
+<div class="about-content pt-45 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+    <p class="welcome">Our Database includes</p>
+<div class="about-counter pt-60">
+<div class="row">
+<div class="col-sm-4">
+<div class="single-counter counter-color-1 mt-30 d-flex">
+<div class="counter-shape">
+<span class="shape-1"></span>
+<span class="shape-2"></span>
+</div>
+<div class="counter-content media-body">
+<span class="counter-count"><span class="counter">350</span></span>
+<p class="text">Proteins</p>
+</div>
+</div> 
+</div>
+<div class="col-sm-4">
+<div class="single-counter counter-color-2 mt-30 d-flex wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+<div class="counter-shape">
+<span class="shape-1"></span>
+<span class="shape-2"></span>
+</div>
+<div class="counter-content media-body">
+<span class="counter-count"><span class="counter">99</span>%</span>
+<p class="text">PPIs</p>
+</div>
+</div> 
+</div>
+<div class="col-sm-4">
+<div class="single-counter counter-color-3 mt-30 d-flex wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.9s">
+<div class="counter-shape">
+<span class="shape-1"></span>
+<span class="shape-2"></span>
+</div>
+<div class="counter-content media-body">
+<span class="counter-count"><span class="counter">870</span></span>
+<p class="text">Organisms</p>
+</div>
+</div> 
+</div>
+</div> 
+</div> 
+<br><br><br>
+<p class="next wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.3s">
+    This database includes protein interaction networks and functions of different species.</p><br>
+<p class="next wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.5s">You can look up the list of protein interactions by <a href="./Protein.html" ><b>Protein Name</b></a> or <a href="./Organism.html"><b>Species Name</b></a>.</p>
+</div> 
+<div class="container">
+    <div class="row">
+    <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.7s">
+        <a href="./Protein.html" >
+            <div class="our-services-image mt-50">
+                <img src="static/assets/images/Protein.jpg" alt="Protein Name">
+            </div>
+        </a> 
+    </div>
+    <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1.7s">
+        <a href="./Organism.html" >
+            <div class="our-services-image mt-50">
+                <img src="static/assets/images/Organism.jpg" alt="Organism Name">
+            </div>
+        </a> 
+    </div>
+    </div>
+    </div>
+</div>
+</div> 
+</div> 
+</section>
+
+<section id="Team" class="blog-area pt-115">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-4">
+<div class="section-title text-center pb-20 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+<h6 class="sub-title">ABOUT US</h6>
+<h4 class="title">Our <span>Team</span></h4>
+</div> 
+</div>
+</div> 
+<div class="row justify-content-center">
+<div class="col-lg-4 col-md-6 col-sm-8">
+<div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.4s">
+<div class="blog-image">
+    <img src="static/assets/images/name-1.jpg" alt="news">
+</div>
+<div class="blog-content">
+<h4 class="blog-title">Database Building and Indexing</h4>
+<div class="name">Zijian Chen</div><br>
+</div>
+</div> 
+</div>
+<div class="col-lg-4 col-md-6 col-sm-8">
+<div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.7s">
+<div class="blog-image">
+    <img src="static/assets/images/name-2.jpg" alt="news">
+</div>
+<div class="blog-content">
+<h4 class="blog-title">Prediction Using ML</h4>
+<div class="name">Weimiao Long</div><br>
+</div>
+</div> 
+</div>
+<div class="col-lg-4 col-md-6 col-sm-8">
+<div class="single-blog mt-30 wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="1s">
+<div class="blog-image">
+    <img src="static/assets/images/name-3.jpg" alt="news">
+</div>
+<div class="blog-content">
+<h4 class="blog-title">Wiki Design and Data Transfer</h4>
+<div class="name">Jialu Wei</div><br>
+</div>
+</div> 
+</div>
+</div> 
+</div> <br><br>
+</section>
+
+<footer id="footer" class="footer-area bg_cover" style="background-image: url(static/assets/images/footer-bg.jpg)">
+<div class="container">
+<div class="footer-widget pt-30 pb-70">
+<div class="row">
+<div class="col-lg-3 col-sm-6 order-sm-1 order-lg-1">
+<div class="footer-about pt-40">
+<a href="#">
+<img src="static/assets/images/logo.png" alt="Logo">
+</a>
+</div> 
+ </div>
+<div class="col-lg-3 col-sm-6 order-sm-3 order-lg-2">
+<div class="footer-link pt-40">
+<div class="footer-title">
+<h5 class="title">Services</h5>
+</div>
+<ul>
+<li><a href="./Protein.html">Protein</a></li>
+<li><a href="./Organism.html">Organism</a></li>
+</ul>
+</div> 
+</div>
+<div class="col-lg-3 col-sm-6 order-sm-4 order-lg-3">
+<div class="footer-link pt-40">
+<div class="footer-title">
+<h5 class="title">About Us</h5>
+</div>
+<ul>
+<li><a href="./index.html#Team">Team</a></li>
+</ul>
+</div> 
+</div>
+<div class="col-lg-3 col-sm-6 order-sm-2 order-lg-4">
+<div class="footer-contact pt-40">
+<div class="footer-title">
+<h5 class="title">Contact Info</h5>
+</div>
+<div class="contact pt-10">
+<p class="text">800 Dongchuan RD. <br>
+Minhang District, Shanghai, China.</p>
+<p class="text">@sjtu.edu.cn</p>
+</div> 
+</div> 
+</div>
+</div> 
+</div> 
+</div> 
+</footer>
+
+<script data-cfasync="false" src="static/assets/js/email-decode.min.js"></script><script src="static/assets/js/vendor/jquery-1.12.4.min.js"></script>
+<!-- <script src="static/assets/js/vendor/modernizr-3.7.1.min.js"></script> -->
+
+<!-- <script src="static/assets/js/popper.min.js"></script> -->
+<!-- <script src="static/assets/js/bootstrap.min.js"></script> -->
+
+<script src="static/assets/js/slick.min.js"></script>
+
+<script src="static/assets/js/ajax-contact.js"></script>
+
+<script src="static/assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="static/assets/js/isotope.pkgd.min.js"></script>
+
+<script src="static/assets/js/waypoints.min.js"></script>
+<script src="static/assets/js/jquery.counterup.min.js"></script>
+
+<script src="static/assets/js/circles.min.js"></script>
+
+<script src="static/assets/js/jquery.appear.min.js"></script>
+
+<script src="static/assets/js/wow.min.js"></script>
+
+<script src="static/assets/js/headroom.min.js"></script>
+
+<script src="static/assets/js/jquery.nav.js"></script>
+
+<script src="static/assets/js/scrollIt.min.js"></script>
+
+<script src="static/assets/js/jquery.magnific-popup.min.js"></script>
+
+<script src="static/assets/js/main.js"></script>
+</body>
+</html>
