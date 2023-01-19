@@ -1,0 +1,113 @@
+.top {
+    margin:auto;
+    padding: 0;
+    height: 60px;
+}
+.logo {
+    float: left;
+    height: 60px;
+    width: auto;
+    overflow: hidden;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+    
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px 40px;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: nunito,sans-serif;
+}
+
+/*鼠标移动到选项上修改背景颜色 */
+li a:hover {
+    color: rgba(255, 98, 7, 0.993);
+}
+
+.background {
+        object-fit: contain;
+        z-index:-1;
+    }
+.imgs {
+    background: #fff;
+    position: relative;
+    width: 100%;
+    height: 600px;
+    color: #f7faf9;
+    }
+.front{
+    z-index:1;
+    position: absolute;
+    text-align: center;
+    top: 39%;
+    left: 25%;
+    font-weight: normal;
+    line-height: 40px;
+    font-size: 28px;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.intro {
+    color:#fff;
+}
+
+table {
+    border-collapse: collapse;/*可以让表格的边框重叠显示*/
+    width: 100%;
+    height: auto;
+    text-align:center;
+}
+
+table,
+th,
+td {
+    border: 2px rgb(175, 175, 175) solid; /*给每个小方框设置边框*/
+    padding: 5px 20px 5px 20px; /*改变方格中文字的边距，让整个方格不那么挤*/
+    /*上  右 下 左*/
+    text-align: center;/*文字居中*/
+}
+
+/*设置表头得样式*/
+table thead {
+    background-color: #333 ;
+    color: #fff;
+}
+
+/*设置奇数和偶数行不同 样式不同*/
+tbody tr:nth-child(2n+1) {
+    /*nth-child选择器会选择tbody下面得2n+1或者odd奇数得tr*/
+    background-color: rgb(221, 220, 220);
+}
+/*同理偶数可改为2n  或者 odd*/
+
+tbody tr:nth-child(even) {
+    /*nth-child选择器会选择tbody下面得2n+1或者even偶数得tr*/
+    background-color: rgb(253, 246, 246);
+}
+
+/*触碰变色效果*/
+tbody tr:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    /*鼠标样式*/
+    cursor: pointer;
+}
